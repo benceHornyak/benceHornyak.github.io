@@ -1,0 +1,42 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Build and Deploy
+        run: |
+          if [ -z "$GA_MEASUREMENT_ID" ]; then
+            echo "Error: GA_MEASUREMENT_ID is not set"
+            exit 1
+          fi
+          echo "Replacing placeholder with: $GA_MEASUREMENT_ID"
+          find . -type f -name '*.html' ! -path './.git/*' ! -path './.github/*' -exec sed -i "s|{{ GA_MEASUREMENT_ID }}|$GA_MEASUREMENT_ID|g" {} +
+        env:
+          GA_MEASUREMENT_ID: ${{ secrets.GA_MEASUREMENT_ID }}
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
