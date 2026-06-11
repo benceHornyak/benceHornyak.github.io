@@ -3,36 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Bence Hornyák - Software Engineer specializing in Angular, TypeScript, Python, and modern web technologies. Based in Budapest, Hungary.">
-    <meta name="keywords" content="Bence Hornyák, Software Engineer, Angular, TypeScript, Python, FastAPI, Web Development, Full-Stack Development, Budapest">
+    <meta name="description" content="Bence Hornyák - Senior Software Engineer in Budapest building scalable, AI-powered web applications with React, Angular and TypeScript.">
     <meta name="author" content="Bence Hornyák">
 
-    <!-- Open Graph / Facebook -->
+    <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://bencehornyak.github.io/">
-    <meta property="og:title" content="Bence Hornyák - Software Engineer">
-    <meta property="og:description" content="Software Engineer specializing in Angular, TypeScript, Python, and modern web technologies. Based in Budapest, Hungary.">
+    <meta property="og:url" content="https://bencehornyak.is-a.dev/">
+    <meta property="og:title" content="Bence Hornyák - Senior Software Engineer">
+    <meta property="og:description" content="Senior Software Engineer in Budapest building scalable, AI-powered web applications with React, Angular and TypeScript.">
 
     <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://bencehornyak.github.io/">
-    <meta property="twitter:title" content="Bence Hornyák - Software Engineer">
-    <meta property="twitter:description" content="Software Engineer specializing in Angular, TypeScript, Python, and modern web technologies. Based in Budapest, Hungary.">
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:url" content="https://bencehornyak.is-a.dev/">
+    <meta property="twitter:title" content="Bence Hornyák - Senior Software Engineer">
+    <meta property="twitter:description" content="Senior Software Engineer in Budapest building scalable, AI-powered web applications with React, Angular and TypeScript.">
 
     <title>Bence Hornyák - Senior Software Engineer</title>
 
-    <!-- Favicons -->
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
 
-    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
-    <!-- Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <!-- Styles -->
     <link rel="stylesheet" href="styles.css">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -45,246 +38,261 @@
     </script>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav>
-        <div class="container">
-            <div class="nav-container">
-                <a href="#home" class="logo">BH</a>
-                <ul class="nav-menu">
-                    <li><a href="#home">Home</a></li>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+        <div class="container nav-container">
+            <a href="#top" class="logo" aria-label="BH. Bence Hornyák, home">BH<span class="logo-dot">.</span></a>
+            <nav aria-label="Primary">
+                <ul class="nav-menu" id="nav-menu">
                     <li><a href="#about">About</a></li>
                     <li><a href="#experience">Experience</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#education">Education</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#contact" class="nav-cta">Contact</a></li>
                 </ul>
-                <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
-                    <i class="fas fa-bars"></i>
-                </button>
-            </div>
+            </nav>
+            <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu">
+                <span class="menu-bar"></span>
+                <span class="menu-bar"></span>
+            </button>
         </div>
-    </nav>
+    </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Bence Hornyák</h1>
-                <p class="subtitle">Senior Software Engineer</p>
-                <p class="location"><i class="fas fa-map-marker-alt"></i> Budapest, Hungary</p>
-                <div class="cta-buttons">
-                    <a href="#contact" class="btn btn-primary">
-                        <i class="fas fa-envelope"></i>
-                        Get In Touch
+    <main id="main">
+        <!-- Hero -->
+        <section id="top" class="hero">
+            <div class="container">
+                <p class="hero-eyebrow reveal">Budapest, Hungary</p>
+                <h1 class="reveal">Bence Hornyák</h1>
+                <p class="hero-title reveal">Senior Software Engineer building scalable, AI&#8209;powered web&nbsp;applications.</p>
+                <p class="hero-sub reveal">Eight years of shipping production frontends with React, Angular and TypeScript. Currently building an AI-powered product at <a href="https://supercharge.io" target="_blank" rel="noopener noreferrer">Supercharge</a>.</p>
+                <div class="hero-actions reveal">
+                    <a href="#contact" class="btn btn-primary">Get in touch</a>
+                    <a href="#experience" class="btn btn-ghost">View experience</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title reveal"><span class="section-index">01</span>About</h2>
+                <div class="about-grid">
+                    <div class="about-text reveal">
+                        <p>I'm a software engineer based in Budapest with eight years of experience delivering web applications across manufacturing, energy and digital product consultancies.</p>
+                        <p>My focus is the frontend: React and Angular, with TypeScript throughout. I also work comfortably across the stack with Python and FastAPI. I care about performance, clean API contracts and the kind of engineering practice that keeps teams fast: code review culture, mentoring and well-instrumented deployments.</p>
+                        <p>Right now I'm working on AI products: integrating LLM APIs, retrieval-augmented generation and the streaming chat interfaces that turn model output into a product people actually want to use.</p>
+                        <p>Along the way I've improved application performance by up to 35%, cut critical bugs in half through proactive monitoring, and mentored developers into productive teammates.</p>
+                    </div>
+                    <dl class="about-facts reveal">
+                        <div class="fact">
+                            <dt>Experience</dt>
+                            <dd>8 years</dd>
+                        </div>
+                        <div class="fact">
+                            <dt>Currently</dt>
+                            <dd>Supercharge</dd>
+                        </div>
+                        <div class="fact">
+                            <dt>Focus</dt>
+                            <dd>React · TypeScript · AI products</dd>
+                        </div>
+                        <div class="fact">
+                            <dt>Based in</dt>
+                            <dd>Budapest, Hungary</dd>
+                        </div>
+                    </dl>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience -->
+        <section id="experience" class="section">
+            <div class="container">
+                <h2 class="section-title reveal"><span class="section-index">02</span>Experience</h2>
+                <ol class="timeline">
+                    <li class="timeline-item reveal">
+                        <p class="timeline-date">Dec 2025 - Present</p>
+                        <div class="timeline-body">
+                            <h3>Senior Frontend Developer · <span class="company">Supercharge</span></h3>
+                            <ul>
+                                <li>Building an AI-powered product for an international client, integrating LLM APIs and retrieval-augmented generation (RAG) into a React/TypeScript frontend</li>
+                                <li>Designing streaming chat UX for AI features: token-by-token rendering, loading and error states that keep model latency from hurting the experience</li>
+                                <li>Developing and documenting reusable component libraries with Storybook</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="timeline-item reveal">
+                        <p class="timeline-date">Sep 2023 - Nov 2025</p>
+                        <div class="timeline-body">
+                            <h3>Senior Angular Developer · <span class="company">Schneider Electric</span></h3>
+                            <ul>
+                                <li>Optimized data consumption in frontend applications by designing efficient API contracts and integrating high-performance endpoints, improving UI responsiveness and load times</li>
+                                <li>Translated complex business requirements into intuitive, performant frontend features, improving delivery accuracy and reducing rework cycles by 35%</li>
+                                <li>Introduced Swagger-based OpenAPI docs to align backend and frontend, reducing integration issues by 50%</li>
+                                <li>Automated deployment and monitoring pipelines for frontend applications with Docker and CI/CD tooling</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="timeline-item reveal">
+                        <p class="timeline-date">Dec 2022 - Sep 2023</p>
+                        <div class="timeline-body">
+                            <h3>Software Engineer · <span class="company">Bluebird</span></h3>
+                            <ul>
+                                <li>Led code reviews, driving adherence to best practices and continuous improvement</li>
+                                <li>Mentored two developers with Angular/NgRx guidance, boosting ramp-up speed</li>
+                                <li>Reduced UI bugs by 40% by standardizing reusable components and consistent frontend practices</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="timeline-item reveal">
+                        <p class="timeline-date">Jun 2021 - Oct 2022</p>
+                        <div class="timeline-body">
+                            <h3>Software Engineer · <span class="company">DMG MORI HEITEC Digital</span></h3>
+                            <ul>
+                                <li>Delivered reliable user-facing features by resolving complex UI edge cases, significantly reducing user-reported issues</li>
+                                <li>Improved sprint planning accuracy by 25% by converting vague business needs into well-scoped development tasks</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="timeline-item reveal">
+                        <p class="timeline-date">Jan 2020 - Jun 2021</p>
+                        <div class="timeline-body">
+                            <h3>Software Developer · <span class="company">Werum IT Solutions</span></h3>
+                            <ul>
+                                <li>Improved application load performance by 30% with Angular lazy loading and bundle splitting</li>
+                                <li>Proactively monitored and addressed Sentry-reported issues, achieving a 50% reduction in critical bugs</li>
+                                <li>Developed new frontend modules for the inCyght SaaS platform, contributing to a 20% increase in user engagement</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="timeline-item reveal">
+                        <p class="timeline-date">Jul 2018 - Jan 2020</p>
+                        <div class="timeline-body">
+                            <h3>Software Developer · <span class="company">suIT Solutions</span></h3>
+                            <ul>
+                                <li>Optimized application performance by leveraging Angular's change detection strategy and reducing unnecessary DOM manipulation</li>
+                                <li>Built frontend features in a fast-paced environment, collaborating closely with backend teams</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills" class="section">
+            <div class="container">
+                <h2 class="section-title reveal"><span class="section-index">03</span>Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-group reveal">
+                        <h3>AI Engineering</h3>
+                        <ul class="tag-list">
+                            <li>LLM APIs (OpenAI, Anthropic)</li>
+                            <li>RAG</li>
+                            <li>Embeddings &amp; vector search</li>
+                            <li>Prompt design</li>
+                            <li>Structured output</li>
+                            <li>Streaming chat UX</li>
+                        </ul>
+                    </div>
+                    <div class="skill-group reveal">
+                        <h3>Frontend</h3>
+                        <ul class="tag-list">
+                            <li>React</li>
+                            <li>Angular</li>
+                            <li>TypeScript</li>
+                            <li>JavaScript</li>
+                            <li>RxJS</li>
+                            <li>NgRx</li>
+                            <li>Storybook</li>
+                            <li>HTML &amp; (S)CSS</li>
+                        </ul>
+                    </div>
+                    <div class="skill-group reveal">
+                        <h3>Backend</h3>
+                        <ul class="tag-list">
+                            <li>Python</li>
+                            <li>FastAPI</li>
+                            <li>PostgreSQL</li>
+                            <li>SQLAlchemy</li>
+                            <li>REST API design</li>
+                            <li>Async programming</li>
+                        </ul>
+                    </div>
+                    <div class="skill-group reveal">
+                        <h3>Tooling &amp; Infrastructure</h3>
+                        <ul class="tag-list">
+                            <li>Docker</li>
+                            <li>CI/CD pipelines</li>
+                            <li>Nx monorepos</li>
+                            <li>Jest</li>
+                            <li>Cypress</li>
+                            <li>Grafana</li>
+                            <li>Prometheus</li>
+                            <li>Sentry</li>
+                        </ul>
+                    </div>
+                    <div class="skill-group reveal">
+                        <h3>Leadership</h3>
+                        <ul class="tag-list">
+                            <li>Mentoring</li>
+                            <li>Code reviews</li>
+                            <li>Cross-functional collaboration</li>
+                            <li>Requirements translation</li>
+                            <li>Technical direction</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section id="education" class="section">
+            <div class="container">
+                <h2 class="section-title reveal"><span class="section-index">04</span>Education &amp; Languages</h2>
+                <div class="education-grid">
+                    <div class="edu-card reveal">
+                        <h3>Computer Science</h3>
+                        <p class="edu-meta">Faculty of Engineering and Information Technology</p>
+                        <p class="edu-meta muted">University of Pécs</p>
+                    </div>
+                    <div class="edu-card reveal">
+                        <h3>Languages</h3>
+                        <p class="edu-meta">Hungarian · Native</p>
+                        <p class="edu-meta">English · Professional working proficiency</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="section section-contact">
+            <div class="container">
+                <h2 class="section-title reveal"><span class="section-index">05</span>Contact</h2>
+                <p class="contact-lead reveal">I'm always interested in hearing about new opportunities and collaborations. The best way to reach me is a message on LinkedIn.</p>
+                <div class="contact-links reveal">
+                    <a class="contact-primary" href="https://www.linkedin.com/in/bence-hornyak/" target="_blank" rel="noopener noreferrer">
+                        <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.55C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.72C24 .77 23.2 0 22.22 0z"/></svg>
+                        LinkedIn
                     </a>
-                    <a href="#about" class="btn btn-secondary">
-                        <i class="fas fa-user"></i>
-                        Learn More
+                    <a href="https://github.com/benceHornyak" target="_blank" rel="noopener noreferrer">
+                        <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58 0-.28-.01-1.04-.02-2.04-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.33-1.76-1.33-1.76-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.49 1 .11-.78.42-1.31.76-1.61-2.66-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.81 5.62-5.49 5.92.43.37.81 1.1.81 2.22 0 1.61-.01 2.9-.01 3.29 0 .32.21.7.82.58A12 12 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                        GitHub
                     </a>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <!-- About Section -->
-    <section id="about" class="about">
+    <footer class="site-footer">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>I'm a passionate Senior Software Engineer based in Budapest, Hungary, with extensive expertise in modern web technologies.</p>
-
-                    <p>With over 6 years of experience in software development, I have a proven track record of improving application performance by up to 35%, reducing critical bugs by 50%, and mentoring development teams. My expertise spans Angular, TypeScript and modern development practices including CI/CD, Docker, and performance monitoring.</p>
-                </div>
-                <div class="about-stats">
-                    <div class="stat-item">
-                        <h3>6+</h3>
-                        <p>Years Experience</p>
-                    </div>
-                    <div class="stat-item">
-                        <h3>Senior</h3>
-                        <p>Software Engineer</p>
-                    </div>
-                    <div class="stat-item">
-                        <h3>Budapest</h3>
-                        <p>Based</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="experience">
-        <div class="container">
-            <h2 class="section-title">Professional Experience</h2>
-
-            <div class="experience-item">
-                <h3>Senior Software Engineer</h3>
-                <div class="company">Schneider Electric</div>
-                <div class="duration">September 2023 - Present</div>
-                <p>• Optimized data consumption in frontend applications by designing efficient API contracts and integrating high-performance endpoints, improving UI responsiveness and load times</p>
-                <p>• Translated complex business requirements into intuitive, performant frontend features by collaborating with stakeholders, improving delivery accuracy and reducing rework cycles by 35%</p>
-                <p>• Introduced Swagger-based OpenAPI docs to align backend and frontend, reducing integration issues by 50%</p>
-                <p>• Automated deployment and monitoring pipelines for frontend applications, utilizing Docker and CI/CD tools</p>
-            </div>
-
-            <div class="experience-item">
-                <h3>Frontend Engineer</h3>
-                <div class="company">Bluebird Kft.</div>
-                <div class="duration">December 2022 - September 2023</div>
-                <p>• Led code reviews, driving adherence to best practices and continuous improvement</p>
-                <p>• Mentored 2 developers, onboarding them with Angular/NgRx guidance, boosting ramp-up speed</p>
-                <p>• Reduced UI bugs by 40% by standardizing reusable components and establishing consistent frontend practices</p>
-            </div>
-
-            <div class="experience-item">
-                <h3>Frontend Engineer</h3>
-                <div class="company">DMG Mori Hungary Kft.</div>
-                <div class="duration">June 2021 - October 2022</div>
-                <p>• Delivered reliable user-facing features by resolving complex UI edge cases, significantly reducing user-reported issues</p>
-                <p>• Improved sprint planning accuracy by 25% by converting vague business needs into well-scoped development tasks</p>
-            </div>
-
-            <div class="experience-item">
-                <h3>Software Engineer</h3>
-                <div class="company">Werum IT Solutions</div>
-                <div class="duration">January 2020 - June 2021</div>
-                <p>• Improved application load performance by 30% by implementing Angular lazy loading and bundle splitting</p>
-                <p>• Proactively monitored and addressed Sentry-reported issues, achieving a 50% reduction in critical bugs</p>
-                <p>• Developed new frontend modules using Angular to enhance application functionality, resulting in 20% increase in user engagement</p>
-            </div>
-
-            <div class="experience-item">
-                <h3>Junior Software Developer</h3>
-                <div class="company">suIT Solutions Kft.</div>
-                <div class="duration">July 2018 - January 2020</div>
-                <p>• Optimized application performance by leveraging Angular's change detection strategy and reducing unnecessary DOM manipulations</p>
-                <p>• Built frontend features in a fast-paced environment, collaborating closely with backend teams for seamless integration</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2 class="section-title">Technical Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3><i class="fas fa-code"></i> Frontend Development</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Angular</span>
-                        <span class="skill-tag">TypeScript</span>
-                        <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">RxJS</span>
-                        <span class="skill-tag">NgRx</span>
-                        <span class="skill-tag">HTML5</span>
-                        <span class="skill-tag">(S)CSS</span>
-                        <span class="skill-tag">Bootstrap</span>
-                        <span class="skill-tag">Mobile-first Design</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3><i class="fas fa-server"></i> Backend Development</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">FastAPI</span>
-                        <span class="skill-tag">RESTful API Design</span>
-                        <span class="skill-tag">PostgreSQL</span>
-                        <span class="skill-tag">SQLAlchemy</span>
-                        <span class="skill-tag">Asynchronous Programming</span>
-                        <span class="skill-tag">TDD</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3><i class="fas fa-tools"></i> Tools & Infrastructure</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Docker</span>
-                        <span class="skill-tag">Nx Monorepos</span>
-                        <span class="skill-tag">Git</span>
-                        <span class="skill-tag">CI/CD Pipelines</span>
-                        <span class="skill-tag">Grafana</span>
-                        <span class="skill-tag">Prometheus</span>
-                        <span class="skill-tag">Sentry</span>
-                        <span class="skill-tag">Jest</span>
-                        <span class="skill-tag">Cypress</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3><i class="fas fa-users"></i> Leadership & Collaboration</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Mentoring</span>
-                        <span class="skill-tag">Code Reviews</span>
-                        <span class="skill-tag">Cross-functional Teams</span>
-                        <span class="skill-tag">Technical Direction</span>
-                        <span class="skill-tag">Requirements Translation</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Education Section -->
-    <section id="education" class="education">
-        <div class="container">
-            <h2 class="section-title">Education & Languages</h2>
-
-            <div class="education-item">
-                <h3>Engineering and Information Technology</h3>
-                <div class="institution">University of Pécs</div>
-                <div class="year">Faculty Graduate</div>
-            </div>
-
-            <h3 class="languages-heading">Languages</h3>
-
-            <div class="cert-item">
-                <h3>Hungarian</h3>
-                <div class="issuer">Native Speaker</div>
-                <div class="date">Fluent</div>
-            </div>
-
-            <div class="cert-item">
-                <h3>English</h3>
-                <div class="issuer">Intermediate Level</div>
-                <div class="date">Working Proficiency</div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <p>I'm always interested in new opportunities and collaborations. Let's connect!</p>
-
-            <div class="contact-links">
-                <a href="https://www.linkedin.com/in/bence-hornyak/" class="contact-link" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-linkedin"></i>
-                    LinkedIn Profile
-                </a>
-                <a href="https://github.com/benceHornyak" class="contact-link" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-github"></i>
-                    GitHub Profile
-                </a>
-                <a href="mailto:sir.bence15@gmail.com" class="contact-link">
-                    <i class="fas fa-envelope"></i>
-                    sir.bence15@gmail.com
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Bence Hornyák. All rights reserved. </p>
+            <p>© 2026 Bence Hornyák</p>
+            <p class="footer-note">Designed &amp; built in Budapest</p>
         </div>
     </footer>
 
-    <!-- Scripts -->
     <script src="main.js"></script>
 </body>
 </html>
